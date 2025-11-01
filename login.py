@@ -1,14 +1,11 @@
-# create a login in python
-import tkinter as tk
-from tkinter import messagebox
+# craete a login in bash
+#!/bin/bash
 
-def login():
-    username = username_entry.get()
-    password = password_entry.get()
-    if username == "admin" and password == "password":
-        messagebox.showinfo("Login", "Login successful")
-    else:
-        messagebox.showerror("Login", "Invalid username or password")
+read -p "Enter your username: " username
+read -p "Enter your password: " password
 
-root = tk.Tk()
-root.title("Login")
+if [ "$username" == "admin" ] && [ "$password" == "password" ]; then
+    echo "Login successful"
+else
+    echo "Login failed"
+fi
