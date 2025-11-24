@@ -1,5 +1,6 @@
-# aibook
+# AiBook Fork
 
-writing a silly book to teach git
+This fork fixes a small typo in the README and adds a usage example for clarity.
 
-We are going to use this file during this course... 
+Branch: `fix-read`  
+Maintainer: Sahar Sistani
